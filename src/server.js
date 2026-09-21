@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const PORT = 3000;
-const authRoutes = require('./src/routes/authRoutes');
+const authRoutes = require('./routes/authRoutes');
 
 app.use(express.json()); // supaya req.body bisa dibaca dalam format JSON
 app.use('/', authRoutes);
